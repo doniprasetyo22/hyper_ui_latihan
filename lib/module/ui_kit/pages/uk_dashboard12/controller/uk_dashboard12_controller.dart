@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:carousel_slider/carousel_controller.dart' as carousel_slider;
 
 class UkDashboard12Controller extends State<UkDashboard12View> {
   static late UkDashboard12Controller instance;
@@ -18,7 +19,8 @@ class UkDashboard12Controller extends State<UkDashboard12View> {
   Widget build(BuildContext context) => widget.build(context, this);
 
   int currentIndex = 0;
-  final CarouselController carouselController = CarouselController();
+  final carousel_slider.CarouselController carouselController =
+      carousel_slider.CarouselController();
 
   List<Map<String, dynamic>> products = [
     {

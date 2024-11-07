@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
 import '../view/uk_carousel_view.dart';
+import 'package:carousel_slider/carousel_controller.dart' as carousel_slider;
 
 class UkCarouselController extends State<UkCarouselView> {
   static late UkCarouselController instance;
@@ -19,5 +20,6 @@ class UkCarouselController extends State<UkCarouselView> {
   Widget build(BuildContext context) => widget.build(context, this);
 
   int currentIndex = 0;
-  final CarouselController carouselController = CarouselController();
+  final carousel_slider.CarouselController carouselController =
+      carousel_slider.CarouselController();
 }

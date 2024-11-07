@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/shared/theme/theme_config.dart';
+import 'package:carousel_slider/carousel_controller.dart' as carousel_slider;
 
 enum CarouselType {
   type1,
@@ -24,7 +25,8 @@ class QCarousel extends StatefulWidget {
 
 class _QCarouselState extends State<QCarousel> {
   int currentIndex = 0;
-  final CarouselController carouselController = CarouselController();
+  final carousel_slider.CarouselController carouselController =
+      carousel_slider.CarouselController();
   @override
   Widget build(BuildContext context) {
     return Column(

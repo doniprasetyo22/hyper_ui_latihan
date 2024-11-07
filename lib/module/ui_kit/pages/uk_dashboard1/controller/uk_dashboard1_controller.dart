@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:flutter/material.dart';
 import '../view/uk_dashboard1_view.dart';
+import 'package:carousel_slider/carousel_controller.dart' as carousel_slider;
 
 class UkDashboard1Controller extends State<UkDashboard1View> {
   static late UkDashboard1Controller instance;
@@ -19,7 +20,8 @@ class UkDashboard1Controller extends State<UkDashboard1View> {
   Widget build(BuildContext context) => widget.build(context, this);
 
   int currentIndex = 0;
-  final CarouselController carouselController = CarouselController();
+  final carousel_slider.CarouselController carouselController =
+      carousel_slider.CarouselController();
 
   List products = [
     {
