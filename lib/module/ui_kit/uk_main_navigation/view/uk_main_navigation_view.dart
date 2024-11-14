@@ -10,17 +10,17 @@ class UkMainNavigationView extends StatefulWidget {
     return QNavigation(
       mode: QNavigationMode.nav2,
       pages: [
-        UkDashboardView(),
+        // UkDashboardView(),
         UkNavigationView(),
         UkFormView(),
         UkButtonView(),
-        UkCarouselView(),
+        // UkCarouselView(),
       ],
       menus: [
-        NavigationMenu(
-          icon: Icons.dashboard,
-          label: "Dashboard",
-        ),
+        // NavigationMenu(
+        //   icon: Icons.dashboard,
+        //   label: "Dashboard",
+        // ),
         NavigationMenu(
           icon: MdiIcons.menuOpen,
           label: "Navigation",
@@ -33,10 +33,10 @@ class UkMainNavigationView extends StatefulWidget {
           icon: MdiIcons.buttonCursor,
           label: "Button",
         ),
-        NavigationMenu(
-          icon: MdiIcons.imageArea,
-          label: "Carousel",
-        ),
+        // NavigationMenu(
+        //   icon: MdiIcons.imageArea,
+        //   label: "Carousel",
+        // ),
       ],
     );
   }
