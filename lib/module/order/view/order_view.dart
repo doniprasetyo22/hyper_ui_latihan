@@ -17,7 +17,25 @@ class OrderView extends StatefulWidget {
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-            children: const [],
+            children: List.generate(controller.orders.length, (index) {
+              final order = controller.orders[index];
+              return Card(
+                margin: EdgeInsets.all(10),
+                elevation: 5,
+                child: ListTile(
+                  contentPadding: EdgeInsets.all(10),
+                  title: Text(order.productName),
+                  subtitle: Text('Order ID: ${order.orderId}'),
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Qty: ${order.quantity}'),
+                      Text('Price: \$${order.price.toStringAsFixed(2)}'),
+                    ],
+                  ),
+                ),
+              );
+            }),
           ),
         ),
       ),

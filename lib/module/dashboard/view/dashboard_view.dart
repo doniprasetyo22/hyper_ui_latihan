@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:hyper_ui/module/mahasiswa/view/mahasiswa_view.dart';
 
 class DashboardView extends StatefulWidget {
   DashboardView({Key? key}) : super(key: key);
@@ -74,43 +75,43 @@ class DashboardView extends StatefulWidget {
                         "label": "Customer",
                         "icon": Icons.people,
                         "color": Colors.green,
-                        "view": FavoriteView(),
+                        "view": UkDashboard9View(),
                       },
                       {
                         "label": "Supplier",
                         "icon": Icons.emoji_people,
                         "color": Colors.blue,
-                        "view": FavoriteView(),
+                        "view": UkDashboard10View(),
                       },
                       {
                         "label": "User",
                         "icon": Icons.person,
                         "color": Colors.grey,
-                        "view": FavoriteView(),
+                        "view": UkDashboard8View(),
                       },
                       {
                         "label": "Report",
                         "icon": Icons.list_alt,
                         "color": Colors.purple,
-                        "view": FavoriteView(),
+                        "view": UkDashboard7View(),
                       },
                       {
                         "label": "Stock",
                         "icon": Icons.numbers,
                         "color": Colors.orange,
-                        "view": FavoriteView(),
+                        "view": MahasiswaView(),
                       },
                       {
                         "label": "Export/Import",
                         "icon": Icons.import_contacts,
                         "color": Colors.blueAccent,
-                        "view": FavoriteView(),
+                        "view": UkNavigationView(),
                       },
                       {
                         "label": "Backup/Restore",
                         "icon": Icons.backup,
                         "color": Colors.pink,
-                        "view": FavoriteView(),
+                        "view": UkButtonView(),
                       }
                     ],
                   ),
